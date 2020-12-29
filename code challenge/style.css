@@ -4,24 +4,24 @@ h3 {
 }
 button {
   outline: none;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 #display {
   margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 8%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 #correct {
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   text-align: center;
 }
 #incorrect {
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   text-align: center;
 }
 #congratulation {
-    margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   text-align: center;
 }
 #start-btn {
