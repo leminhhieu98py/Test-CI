@@ -1,0 +1,32 @@
+h3 {
+  display: inline-block;
+  margin-right: 1rem;
+}
+button {
+  outline: none;
+  margin-top: 2rem;
+}
+#display {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+#correct {
+  margin-bottom: 5%;
+  text-align: center;
+}
+#incorrect {
+  margin-bottom: 5%;
+  text-align: center;
+}
+#congratulation {
+    margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#start-btn {
+  margin-left: 45%;
+}
+#playagain-btn {
+  margin-left: 45%;
+}
