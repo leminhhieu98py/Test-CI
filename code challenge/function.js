@@ -40,60 +40,73 @@ function getData() {
   startBtn.addEventListener("click", () => {
     startBtn.style.display = "none";
     congratulation.style.display = "none";
-    let score = 0;
-    scores.innerHTML = score;
-    let count = 0;
     fetch(api_url)
       .then((res) => res.json())
       .then((data) => {
+        let score = 0;
+        scores.innerHTML = score;
+        let count = 0;
         displayMain.style.display = "block";
         displayQandA(data, count);
-        score = 0;
-        count = 0;
         answer1.addEventListener("click", () => {
           correct.style.display = "block";
           incorrect.style.display = "none";
           score += 10;
           scores.innerHTML = score;
+          console.log(count);
           if (count < 4) {
             count++;
             displayQandA(data, count);
           } else {
             end();
             finalScore.innerHTML = score;
+            count = 0;
+            score = 0;
           }
         });
         answer2.addEventListener("click", () => {
           correct.style.display = "none";
           incorrect.style.display = "block";
+          console.log(count);
+
           if (count < 4) {
             count++;
             displayQandA(data, count);
           } else {
             end();
             finalScore.innerHTML = score;
+            count = 0;
+            score = 0;
           }
         });
         answer3.addEventListener("click", () => {
           correct.style.display = "none";
           incorrect.style.display = "block";
+          console.log(count);
+
           if (count < 4) {
             count++;
             displayQandA(data, count);
           } else {
             end();
             finalScore.innerHTML = score;
+            count = 0;
+            score = 0;
           }
         });
         answer4.addEventListener("click", () => {
           correct.style.display = "none";
           incorrect.style.display = "block";
+          console.log(count);
+
           if (count < 4) {
             count++;
             displayQandA(data, count);
           } else {
             end();
             finalScore.innerHTML = score;
+            count = 0;
+            score = 0;
           }
         });
       });
